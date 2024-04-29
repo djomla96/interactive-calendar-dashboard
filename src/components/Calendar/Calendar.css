@@ -1,0 +1,12 @@
+.calendar-wrapper {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.rbc-calendar {
+    flex: 1 1 auto;
+}
+
+.rbc-event, .rbc-day-slot .rbc-background-event {
+    background-color: #202831;
+}

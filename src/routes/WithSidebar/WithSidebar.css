@@ -1,0 +1,12 @@
+.page-container {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.page-content {
+    display: flex;
+    padding: 16px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    margin-bottom: 16px;
+}

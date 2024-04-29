@@ -1,0 +1,146 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "plugin:react-hooks/recommended",
+      "plugin:react/recommended",
+      "airbnb-typescript",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module",
+      "project": ["./tsconfig.json"]
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "react-hooks",
+      "jsx-a11y",
+      "import",
+      "prettier"
+    ],
+    "rules": {
+      "arrow-body-style": [1, "as-needed"],
+      "implicit-arrow-linebreak": 0,
+      "import/newline-after-import": 1,
+      "import/no-extraneous-dependencies": [
+        2,
+        {
+          "devDependencies": true
+        }
+      ],
+      "import/no-unresolved": 2,
+      "import/prefer-default-export": 0,
+      "import/no-duplicates": 1,
+      "import/order": [
+        1,
+        {
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          },
+          "newlines-between": "always"
+        }
+      ],
+      "no-confusing-arrow": 0,
+      "no-console": [
+        1,
+        {
+          "allow": ["error"]
+        }
+      ],
+      "no-debugger": 1,
+      "no-empty": 1,
+      "no-nested-ternary": 1,
+      "no-restricted-imports": [
+        1,
+        {
+          "paths": [
+            {
+              "name": "styled-components",
+              "message": "Please import from styled-components/macro."
+            }
+          ],
+          "patterns": ["!styled-components/macro", "../*"]
+        }
+      ],
+      "no-unused-vars": 0,
+      "padding-line-between-statements": [
+        1,
+        {
+          "blankLine": "always",
+          "prev": "*",
+          "next": "return"
+        },
+        {
+          "blankLine": "always",
+          "prev": ["const", "let", "var"],
+          "next": "*"
+        },
+        {
+          "blankLine": "any",
+          "prev": ["const", "let", "var"],
+          "next": ["const", "let", "var"]
+        },
+        {
+          "blankLine": "always",
+          "prev": "multiline-expression",
+          "next": "*"
+        },
+        {
+          "blankLine": "always",
+          "prev": "if",
+          "next": ["const", "let", "var"]
+        }
+      ],
+      "prefer-template": 1,
+      "prettier/prettier": 1,
+      "react/boolean-prop-naming": 1,
+      "react/display-name": 0,
+      "react/jsx-no-useless-fragment": 1,
+      "react/jsx-curly-brace-presence": 1,
+      "react/jsx-first-prop-new-line": [1, "multiline"],
+      "react/jsx-filename-extension": 0,
+      "react/jsx-handler-names": 1,
+      "react/jsx-one-expression-per-line": 0,
+      "react/jsx-props-no-spreading": 0,
+      "react/jsx-sort-props": [
+        "warn",
+        {
+          "callbacksLast": true,
+          "shorthandFirst": true
+        }
+      ],
+      "react/jsx-uses-react": 0,
+      "react/no-array-index-key": 2,
+      "react/no-danger": 2,
+      "react/no-unstable-nested-components": 1,
+      "react/prop-types": 0,
+      "react/react-in-jsx-scope": 0,
+      "react-hooks/rules-of-hooks": 2,
+      "react-hooks/exhaustive-deps": 1,
+      "require-await": 1,
+      "@typescript-eslint/indent": 0,
+      "@typescript-eslint/no-non-null-assertion": 0,
+      "@typescript-eslint/no-unused-expressions": 0,
+      "@typescript-eslint/no-unused-vars": 1
+    },
+    "settings": {
+      "import/parsers": {
+        "@typescript-eslint/parser": [".ts", ".tsx"]
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx", ".native.js"],
+          "paths": ["src"]
+        }
+      }
+    }
+  }

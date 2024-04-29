@@ -1,0 +1,78 @@
+.event-box {
+    display: flex;
+    box-shadow: 0px 0px 12px -7px rgba(0,0,0,0.75);
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.left-wrapper {
+    display: flex;
+}
+
+.event-date {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    background-color: #202831;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.event-day {
+    font-size: 42px;
+}
+
+.event-month {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.event-content h3 {
+    margin: 0;
+    margin-bottom: 4px
+}
+
+.event-content p {
+    margin: 0;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.action-container button {
+    color: #717c85;
+    transition: border-color .4s ease-in-out;
+    border-radius: 8px;
+    background-color: transparent;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.action-container button:hover svg {
+    fill: #191e24;;
+}
